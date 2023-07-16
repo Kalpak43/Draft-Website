@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: monospace;
 }
 
 /*--------------------------------------------------------------
@@ -119,11 +119,13 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: rgba(47, 28, 62, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(24, 6, 185, 0.8);
+  background: rgba(47, 28, 62, 0.7);
   padding: 12px 0;
 }
 
@@ -153,6 +155,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+  
 }
 
 .navbar ul {
@@ -253,7 +256,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgba(47, 28, 62, 0.7);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -265,7 +268,7 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
-  color: #2c4964;
+  color: #fff;
 }
 
 .navbar .dropdown ul a i {
@@ -331,12 +334,13 @@ h6 {
 
 .navbar-mobile {
   position: fixed;
-  overflow: hidden;
+  min-height: 80vh;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(28, 47, 65, 0.9);
+  background: rgba(47, 28, 62, 0.9);
+  backdrop-filter: blur(10px);
   transition: 0.3s;
   z-index: 999;
 }
@@ -355,7 +359,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: transparent;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -368,7 +372,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #2c4964;
+  color: white;
 }
 
 .navbar-mobile a:hover:before,
@@ -396,8 +400,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: transparent;
 }
 
 .navbar-mobile .dropdown ul li {
@@ -422,13 +425,49 @@ h6 {
   display: block;
 }
 
+.navbar-mobile .dropdown>.dropdown-active li a {
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #5F0A87  50%, #A4508B 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: transparent;
   background-size: cover;
 }
 
@@ -593,7 +632,11 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #2c4964;
+  color: #fff;
+}
+
+.about .content p, .about .content li {
+  color: #ffffffbc;
 }
 
 .about .content ul {
@@ -631,6 +674,13 @@ section {
 
 .about .content .read-more:hover {
   background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+}
+
+.about .row .ab {
+  text-align: justify;
+  background: rgba(47, 28, 62, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
 }
 
 .about .content .read-more i {
@@ -795,6 +845,114 @@ section {
   fill: #11dbcf;
 }
 
+.container .row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+} 
+
+.card {
+  position: relative;
+  padding: 0;
+  margin: 0 !important;
+  overflow: hidden;
+  max-width: 280px;
+  max-height: 340px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.card .card-image {
+  width: 100%;
+  max-height: 340px;
+}
+
+.card .card-image img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+.card .card-content {
+  position: absolute;
+  bottom: -180px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  min-height: 140px;
+  width: 100%;
+  transition: bottom .4s ease-in;
+  box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .card-content {
+  bottom: 0px;
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  transition: 0.8s;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition-delay: 0.2s;
+}
+
+.card .card-content h5 {
+  transition: 0.5s;
+  font-weight: 200;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.card .card-content .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+
+.card .card-content .social-icons li {
+  margin: 10px;
+  transition: 0.5s;
+  transition-delay: calc(0.15s * var(--i));
+  transform: translateY(50px);
+}
+
+
+.card:hover .card-content .social-icons li {
+  transform: translateY(20px);
+}
+
+.card .card-content .social-icons li a {
+  color: #fff;
+}
+
+.card .card-content .social-icons li a span {
+  font-size: 1.3rem;
+}
+
+@media(max-width: 991.5px) {
+  .container {
+      margin-top: 20px;
+  }
+
+  .container .row .col-lg-4 {
+      margin: 20px 0px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -822,6 +980,37 @@ section {
   background-size: cover;
   min-height: 400px;
 }
+
+.features .section-title, .features h4 {
+  color: #fff;
+}
+
+.features h4 {
+  color: #ffffff;
+}
+.features .row p {
+  color: #ffffff7e;
+}
+
+.features .join-now {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.features .join-now:hover {
+  background: #fff;
+  color: #5846f9;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
