@@ -43,7 +43,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5846f9;
+  background: rgba(47, 28, 62, 0.7);
+  backdrop-filter: blur(10px);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1283,8 +1284,30 @@ section {
   padding-inline: 1rem;
   z-index: 20;
 }
+.portfolio .content .content-date {
+  font-family: monospace;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  z-index: 20;
+  text-align: right;
+  color: #fff;
+  background: rgba(47, 28, 62, 0.5);
+  border-end-end-radius: 0.4rem;
+  backdrop-filter: blur(5px);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
 
 .portfolio .content:hover .content-title {
+  color: #fff;
+}
+.portfolio .content:hover .content-date {
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
   color: #fff;
 }
 
