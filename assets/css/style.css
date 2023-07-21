@@ -328,7 +328,7 @@ h6 {
     display: block;
   }
 
-  .navbar ul {
+  #header .navbar ul {
     display: none;
   }
 }
@@ -352,7 +352,7 @@ h6 {
   right: 15px;
 }
 
-.navbar-mobile ul {
+#header .navbar-mobile ul {
   display: block;
   position: absolute;
   top: 55px;
@@ -717,9 +717,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# team
 --------------------------------------------------------------*/
-.services .icon-box {
+/* .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -846,6 +846,11 @@ section {
 
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+} */
+
+.team .section-title h5 {
+  text-align: center;
+  padding-top: 30px;
 }
 
 .container .row .col-lg-4 {
@@ -881,7 +886,8 @@ section {
   position: absolute;
   bottom: -180px;
   color: #fff;
-  background: rgba(47, 28, 62, 0.2);;
+  background: rgba(47, 28, 62, 0.2);
+  ;
   backdrop-filter: blur(10px);
   min-height: 140px;
   width: 100%;
@@ -957,47 +963,47 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features
+# Join Us section
 --------------------------------------------------------------*/
-.features .icon-box h4 {
+.join-us .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
 }
 
-.features .icon-box i {
+.join-us .icon-box i {
   font-size: 48px;
   float: left;
   color: #5846f9;
 }
 
-.features .icon-box p {
+.join-us .icon-box p {
   font-size: 15px;
   color: #848484;
   margin-left: 60px;
 }
 
-.features .image {
+.join-us .image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
 }
 
-.features .section-title,
-.features h4 {
+.join-us .section-title,
+.join-us h4 {
   color: #fff;
 }
 
-.features h4 {
+.join-us h4 {
   color: #ffffff;
 }
 
-.features .row p {
+.join-us .row p {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.features .join-now {
+.join-us .join-now {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1011,236 +1017,114 @@ section {
   border: 2px solid #fff;
 }
 
-.features .join-now:hover {
+.join-us .join-now:hover {
   background: #fff;
   color: #5846f9;
 }
 
 
 /*--------------------------------------------------------------
-# Testimonials
+# Research and blogs section
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
+
+.research-and-blogs .navbar ul li a {
+  color: black;
 }
 
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
+.research-and-blogs .navbar ul li a:hover,
+.research-and-blogs .navbar ul li a:active,
+.research-and-blogs .navbar ul li a:focus {
+  color: #000;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+#research-tab,
+#blogs-tab {
+  padding: 1rem;
 }
 
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: #2c4964;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0 0 0 45px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #b1a9fc;
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: #fff;
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #5846f9;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.research-and-blogs .navbar ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
   background-color: #5846f9;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-@media (max-width: 767px) {
-  .testimonials {
-    margin: 30px 10px;
+.research-and-blogs .navbar ul li a:hover:before,
+.research-and-blogs .navbar ul li:hover>a:before,
+.research-and-blogs .navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+.research-and-blogs .research-card .card-content, .research-and-blogs .blog-card .card-content {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 991px) {
+  .research-and-blogs .research-card .card-content, .research-and-blogs .blog-card .card-content {
+    width: 100%;
+    aspect-ratio: 1/2;
+  }
+  .research-and-blogs .research-card .card-content .content-details h5 b {
+    font-size: 1rem;
   }
 }
 
+
+.research-and-blogs .research-card .card-content .content-image img, .research-and-blogs .blog-card .card-content .content-image img {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.research-and-blogs .research-card .card-content .content-details h5, .research-and-blogs .blog-card .card-content .content-details h5 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2;
+}
+
+.research-and-blogs .research-card .card-content .content-details .content-tags, .research-and-blogs .blog-card .card-content .content-details .content-tags {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.research-and-blogs .research-card .card-content .content-details .btn, .research-and-blogs .blog-card .card-content .content-details .btn  {
+  background-color: #7b27d8;
+  border-color: #7b27d8;
+}
+
+.research-and-blogs .research-card .card-content .content-details .content-tags::-webkit-scrollbar, .research-and-blogs .blog-card .card-content .content-details .content-tags::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 /*--------------------------------------------------------------
-# Portfolio
+# Events
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.events .events-item {
   margin-bottom: 30px;
 }
 
-.portfolio .section-title h2{
+.events .section-title {
+  text-align: justify;
+}
+
+.events .section-title h2 {
+  text-align: center;
   color: #fff;
 }
 
-.portfolio .section-title p {
+
+.events .section-title p {
   color: rgba(255, 255, 255, 0.8);
+
 }
 
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
-  font-family: "Poppins", sans-serif;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background: #5846f9;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(88, 70, 249, 0.8);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  opacity: 0;
-  left: 0;
-  right: 0;
-  bottom: 10%;
-  text-align: center;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #fff;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-  top: calc(50% - 48px);
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
-  bottom: calc(50% - 50px);
-}
-
-.portfolio .content {
+.events .content {
   position: relative;
   width: 90%;
   max-width: 500px;
@@ -1250,11 +1134,11 @@ section {
   border-radius: 0.4rem;
 }
 
-.portfolio .content img {
+.events .content img {
   border-radius: 0.4rem;
 }
 
-.portfolio .content .content-overlay {
+.events .content .content-overlay {
   background: rgba(47, 28, 62, 0.7);
   border-radius: 0.4rem;
   backdrop-filter: blur(10px);
@@ -1272,7 +1156,7 @@ section {
   z-index: 10;
 }
 
-.portfolio .content .content-title {
+.events .content .content-title {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1284,7 +1168,8 @@ section {
   padding-inline: 1rem;
   z-index: 20;
 }
-.portfolio .content .content-date {
+
+.events .content .content-date {
   font-family: monospace;
   position: absolute;
   width: 100%;
@@ -1302,24 +1187,25 @@ section {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.portfolio .content:hover .content-title {
+.events .content:hover .content-title {
   color: #fff;
 }
-.portfolio .content:hover .content-date {
+
+.events .content:hover .content-date {
   background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(0px);
   color: #fff;
 }
 
-.portfolio .content:hover .content-overlay {
+.events .content:hover .content-overlay {
   opacity: 1;
 }
 
-.portfolio .content-image {
+.events .content-image {
   width: 100%;
 }
 
-.portfolio .content-details {
+.events .content-details {
   position: absolute;
   text-align: justify;
   width: 90%;
@@ -1335,13 +1221,13 @@ section {
   z-index: 20;
 }
 
-.portfolio .content:hover .content-details {
+.events .content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.portfolio .content-details h3 {
+.events .content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -1349,7 +1235,7 @@ section {
   text-transform: uppercase;
 }
 
-.portfolio .content-details p {
+.events .content-details p {
   color: #fff;
   font-size: 0.8em;
 }
@@ -1357,67 +1243,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #5846f9;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5846f9;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(44, 73, 100, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
 
 /*--------------------------------------------------------------
 # Pricing
@@ -1812,7 +1637,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 30px 0;
   position: relative;
 }
 
@@ -1834,6 +1659,10 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
+}
+
+#footer .logo img {
+  max-height: 40px;
 }
 
 #footer .footer-top h4 {
