@@ -67,6 +67,16 @@ h6 {
   opacity: 1;
 }
 
+.btn-bg {
+  background-color: #7b27d8;
+  color: #fff;
+}
+
+.btn-bg:hover {
+  background-color: #8577fb;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1062,11 +1072,13 @@ section {
   padding-block: 0.5rem;
   padding-inline: 1rem;
   z-index: 20;
+  background-color: #00000011;
 }
 
 .events .content .content-title h4 {
   color: #fff;
   font-weight: bolder;
+  text-shadow: #FC0 1px 0 10px;
 }
 
 .events .content .content-date {
