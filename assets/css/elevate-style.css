@@ -27,6 +27,7 @@ body {
     text-align: center;
 }
 
+
 /* Clip text element */
 .clip-text {
     font-size: 3rem;
@@ -96,7 +97,7 @@ body {
 }
 
 #about, #team {
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
 #about .content, #team .content {
