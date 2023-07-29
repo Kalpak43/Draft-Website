@@ -34,52 +34,45 @@
 </head>
 
 <body>
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-
+  <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
   </div>
-  <secion id="hero">
-    <!-- <div class="container-fluid bg-dark" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
 
-                    <div><a href="#about" class="btn-get-started scrollto">About Us</a></div>
-                </div>
-                <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-                    <img src="assets/img/Hero Sec Elevate.png" class="img-fluid animated" alt="">
-                </div>
-            </div>
-        </div> -->
-  </secion>
+  <input type="checkbox" id="active">
+  <label for="active" class="menu-btn"><span></span></label>
+  <label for="active" class="close"></label>
+  <div class="nav">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#timeline">Schedule</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </div>
+
+  <section id="hero">
+    <div class="d-flex justify-content-center align-items-center h-100 flex-column" data-aos="zoom-in"
+      data-aos-delay="150">
+      <img src="assets/img/Hero Sec Elevate1.png" class="img-fluid animated" alt="">
+      <div class="date mb-4">
+        <h2>Coming this August</h2>
+      </div>
+      <a href="" type="button" class="btn rounded-pill btn-outline-light">Register Now</a>
+    </div>
+
+  </section>
+
 
   <main>
     <!-- ABOUT SECTION -->
     <section id="about" class="d-flex align-items-center">
       <div class="container" data-aos="fade-up">
         <div class="title" data-aos="fade-up">
-          <div class="clip-text clip-text_one">ABOUT</div>
+          <div class="clip-text clip-text_one">About</div>
         </div>
-        <div class="content" data-aos="fade-left" data-aos-delay="300">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, beatae. Qui veniam, accusamus
-          magnam nam inventore obcaecati ex, explicabo dolores quam quis possimus eos incidunt repellat aut.
-          Rem, amet repudiandae!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, beatae. Qui veniam, accusamus
-          magnam nam inventore obcaecati ex, explicabo dolores quam quis possimus eos incidunt repellat aut.
-          Rem, amet repudiandae!
-        </div>
-      </div>
-    </section>
-
-    <!-- IEEE SECTION -->
-    <section id="about" class="d-flex align-items-center">
-      <div class="container" data-aos="fade-up">
-        <div class="title" data-aos="fade-up">
-          <div class="clip-text clip-text_one">IEEE-CS SBC</div>
-        </div>
-        <div class="content row pt-4 px-2" data-aos="fade-left" data-aos-delay="150">
+        <div class="content row pt-4 px-2" data-aos="fade-up" data-aos-delay="150">
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
             <p>The IEEE-CS SBC Chapter(GHRCE) is a Student Branch Chapter comprising enthusiastic members of the IEEE
               community who are dedicated to promoting Computer Science technologies and emerging technology trends that
@@ -96,9 +89,104 @@
         </div>
       </div>
     </section>
+    <br>
+    <!-- ABOUT-IEEE SECTION -->
+    <section id="about-ieee" class="d-flex align-items-center">
+      <div class="container" data-aos="fade-up">
+        <div class="title" data-aos="fade-up">
+          <div class="clip-text clip-text_one">IEEE-CS SBC</div>
+        </div>
+        <div class="content row pt-4 px-2" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 order-1 order-lg-1 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="150">
+            <img src="./assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 d-flex align-items-center">
+            <p>The IEEE-CS SBC Chapter(GHRCE) is a Student Branch Chapter comprising enthusiastic members of the IEEE
+              community who are dedicated to promoting Computer Science technologies and emerging technology trends that
+              have a positive social impact on humanity. Through the organization of diverse workshops and events, our
+              aim is not only to contribute to the betterment of society, but also to facilitate individual development
+              by providing opportunities to learn new technical skills and cultivate leadership qualities. As
+              volunteers, our mission is to foster technological advancement by bringing people together, while our
+              vision is to create abundant opportunities for knowledge sharing, technical skill development,
+              collaboration, and networking to contribute towards a better future.</p>
+          </div>
 
+        </div>
+      </div>
+    </section>
+    <br>
+    <!-- SPEAKER SECTION -->
+    <section class="speakers" id="speakers" class="d-flex align-items-center">
+      <div class="container">
+        <div class="title" data-aos="fade-up">
+          <div class="clip-text clip-text_one">Speakers</div>
+        </div>
+        <div class="speaker-items container pt-4 px-5" data-aos="fade-up">
+          <div class="row">
+
+            <div class="col-lg-6 mt-4" data-aos="fade-up">
+
+              <div class="card p-3 py-4">
+
+                <div class="text-center">
+                  <img src="https://i.imgur.com/bDLhJiP.jpg" width="150" class="rounded-circle">
+                </div>
+
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Alexender Schidmt</h5>
+                  <span>UI/UX Designer</span>
+
+                  <div class="px-4 mt-1">
+                    <p class="fonts">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat. </p>
+
+                  </div>
+
+                  <ul class="social-list">
+                    <li><a href="" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-6 mt-4" data-aos="fade-up">
+
+              <div class="card p-3 py-4">
+
+                <div class="text-center">
+                  <img src="https://i.imgur.com/bDLhJiP.jpg" width="150" class="rounded-circle">
+                </div>
+
+                <div class="text-center mt-3">
+                  <h5 class="mt-2 mb-0">Alexender Schidmt</h5>
+                  <span>UI/UX Designer</span>
+
+                  <div class="px-4 mt-1">
+                    <p class="fonts">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat. </p>
+
+                  </div>
+
+                  <ul class="social-list">
+                    <li><a href="" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <br>
     <!-- TIMELINE SECTION -->
-    <section id="timeline" class="d-flex align-items-center">
+    <section id="timeline" class="d-flex align-items-center mt-4">
       <div class="container" data-aos="fade-up">
         <div class="title" data-aos="fade-up">
           <div class="clip-text clip-text_one">EVENT TIMELINE</div>
@@ -181,10 +269,11 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
-  <footer class="p-4" id="footer">
+  <footer class="p-4" id="footer" data-aos="fade-up">
     <h5 class="text-center"><b>Elevate 2023</b></h5>
     <div class="container mt-3">
       <div class="row">
