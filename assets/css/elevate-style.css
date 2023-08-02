@@ -161,52 +161,92 @@ input[type="checkbox"]{
 
 
 /* BG */
-.ocean { 
-  height: 5%;
-  width:100%;
+
+.Bg {
   position:fixed;
-  bottom:0;
-  left:0;
-  background: #015871;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  text-align:center;
+  background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgb(1, 1, 1) 100%);
+  color:white;
+  z-index: -3;
 }
 
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+.Bg .inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
 }
 
-.wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
+.Bg .flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-@keyframes wave {
+.Bg .waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+.Bg .content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: rgb(3, 3, 3);
+}
+
+/* Animation */
+
+.Bg .parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.Bg .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.Bg .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.Bg .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.Bg .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
   0% {
-    margin-left: 0;
+   transform: translate3d(-90px,0,0);
   }
-  100% {
-    margin-left: -1600px;
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .Bg .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .Bg .content {
+    height:30vh;
+  }
+  .Bg h1 {
+    font-size:24px;
   }
 }
 
-@keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
-  }
-  50% {
-    transform: translate3d(0,5px,0);
-  }
-}
-
-/* NAV */
-
+/* HERO */
 
 #hero {
   font-family: monospace;
@@ -244,14 +284,12 @@ input[type="checkbox"]{
   50% { border-color: #8E24AA; }
 }
 
-#spinner {
-  transform-origin: center;
-  animation-name: animation;
-  animation-duration: 1.2s;
-  animation-timing-function: cubic-bezier;
-  animation-iteration-count: infinite;
+@media screen and (max-width : 990px) {
+  #hero .btns {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
 /* Clip text element */
 .clip-text {
   font-size: 3rem;
