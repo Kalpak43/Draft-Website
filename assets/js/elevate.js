@@ -1,22 +1,30 @@
-let countDownDate = new Date("Aug 25, 2023 10:00:00").getTime()
-
-let x = setInterval(() => {
-    let now = new Date.getTime()
+let countDownDate = new Date("Aug 25, 2023 10:00:00")
+countDownDate.getHours()
+let x = setInterval(function () {
+    let now = new Date()
+    now.getHours()
     let distance = countDownDate - now
 
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let days = String(Math.floor(distance / (1000 * 60 * 60 * 24)));
+    days.length == 1 ? days = "0" + days : days
 
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    let hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+    hours.length == 1 ? hours = "0" + hours : hours
 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+    let minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+    minutes.length == 1 ? minutes = "0" + minutes : minutes
+
+    let seconds = String(Math.floor((distance % (1000 * 60)) / 1000));
+    seconds.length == 1 ? seconds = "0" + seconds : seconds
+
+    let content = document.getElementById('countdown')
+    content.innerHTML = `<small>Time Left:</small><h1><span>${days}</span>:<span>${hours}</span>:<span>${minutes}</span>:<span>${seconds}</span> </h1>`
+
+    if(days == "00" && hours == "00" && minutes =="00" && seconds == "00"){
+        content.innerHTML = `<h1>Event has Begun</h1>`
     }
-
 }, 1000)
+
 
 const unCheck = () => {
     const checkBox = document.getElementById('active')
