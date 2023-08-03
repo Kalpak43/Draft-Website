@@ -365,10 +365,19 @@ input[type="checkbox"]{
 
 .countdown {
   font-family: monospace;
-  position: fixed;
-  top: 1%;
+  margin: 1rem;
   padding-inline: 0.3rem;
   text-align: center;
+}
+
+.countdown h1 {
+  font-size: 5rem;
+}
+
+@media screen and (max-width : 990px) {
+  .countdown h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .countdown h1 span {
@@ -376,12 +385,13 @@ input[type="checkbox"]{
   border-radius: 0.2rem;
   border: 2px solid #8E24AA;
   background-color: #8d24aa66;
+  box-shadow: 2px 2px 4px 5px #cb8cdd;
 }
 
 /* SPONSORS */
 
 .sponsor-logo {
-  background-color: #8d24aa4e;
+  background-color: #8a82924e;
   backdrop-filter: blur(10px);
   margin: 0.4rem;
   border-radius: 0.4rem;
@@ -390,17 +400,35 @@ input[type="checkbox"]{
 }
 
 .sponsor-logo img {
-  max-height: 60px;
   object-fit: cover;
 }
 
+.ghrce_logo {
+  max-height: 170px;
+}
+
+.ieeecs_logo {
+  max-height: 60px;
+}
+
+.gdgcn_logo {
+  max-height: 100px;
+}
+
+.coeds_logo {
+  max-height: 130px;
+}
+
+.cse_logo {
+  max-height: 150px;
+}
 
 /* ABOUT */
 
 #about,
 #about-ieee,
 #team {
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 #about .content,
@@ -497,8 +525,8 @@ input[type="checkbox"]{
 .event-item {
   position: relative;
   width: 90%;
-  aspect-ratio: 3/4;
-  background-color: #e87e1a;
+  aspect-ratio: 16/9;
+  background-color: #4c4949;
   border-radius: 0.4rem;
   overflow: hidden;
 }
@@ -507,12 +535,6 @@ input[type="checkbox"]{
   .event-item {
     width: 100%;
   }
-}
-
-.event-item img {
-  border-radius: 0.4rem;
-  height: 100%;
-  object-fit: cover;
 }
 
 .event-item h2, .event-item a {

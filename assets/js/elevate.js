@@ -18,7 +18,7 @@ let x = setInterval(function () {
     seconds.length == 1 ? seconds = "0" + seconds : seconds
 
     let content = document.getElementById('countdown')
-    content.innerHTML = `<small>Time Left:</small><h1><span>${days}</span>:<span>${hours}</span>:<span>${minutes}</span>:<span>${seconds}</span> </h1>`
+    content.innerHTML = `<p>Time Left:</p><h1><span>${days}</span>:<span>${hours}</span>:<span>${minutes}</span>:<span>${seconds}</span> </h1>`
 
     if(days == "00" && hours == "00" && minutes =="00" && seconds == "00"){
         content.innerHTML = `<h1>Event has Begun</h1>`
