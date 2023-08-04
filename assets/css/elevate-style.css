@@ -526,7 +526,8 @@ input[type="checkbox"]{
   position: relative;
   width: 90%;
   aspect-ratio: 16/9;
-  background-color: #4c4949;
+  border: 2px solid white;
+  background-color: #040404;
   border-radius: 0.4rem;
   overflow: hidden;
 }
@@ -549,8 +550,15 @@ input[type="checkbox"]{
 }
 
 .event-item a {
-  bottom: 0;
-  right: 0;
+  top: 80%;
+  left: 43%;
+}
+
+@media only screen and (max-width : 990px) {
+  .event-item a {
+    top: 70%;
+    left: 39%;
+  }
 }
 
 .event-item .hover-content {
@@ -727,6 +735,20 @@ input[type="checkbox"]{
 }
 
 /* HACK-NOW */
+
+.hacknow-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-inline: 0.5rem;
+  background-color: #00ffea50;
+  backdrop-filter: blur(10px);
+  z-index: 998;
+}
+
+.hacknow-logo img {
+  max-height: 100px;
+}
 
 .event-ins .container {
   background-color: #8d24aa56;
