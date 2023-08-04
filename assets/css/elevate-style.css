@@ -745,47 +745,14 @@ input[type="checkbox"]{
 }
 
 .event-ins .container {
-  background-color: #8d24aa56;
+  background-color: #8adbe070;
   border-radius: 0.4rem;
   backdrop-filter: blur(10px);
 }
 
-.event-ins ol {
-  padding-left: 50px;
-}
-.event-ins li {
-  color: #ffffff97;
-  padding-left: 16px;
-  margin-top: 24px;
-  position: relative;
-  font-size: 16px;
-  line-height: 20px;
-}
-.event-ins .event-ins li:before {
-  content: '';
-  display: block;
-  height: 42px;
-  width: 42px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  position: absolute;
-  top: -8px;
-  left: -35px;
-}
-.event-ins strong {
-  font-size: 1.5rem;
-  color: #fff;
-}
-.event-ins ol.alternating-colors li:nth-child(odd):before {
-  border-color: #8E24AA;
-}
-.event-ins ol.alternating-colors li:nth-child(even):before {
-  border-color: #23a6d5;
-}
-
 table {
   width: 100%;
-  background-image: linear-gradient(to right, #069d90, #01554e);
+  background-image: linear-gradient(to right, #069d90, #023834);
   font-size: 2rem;
 }
 
@@ -800,7 +767,7 @@ table, thead, tr, td tbody {
 }
 
 thead th {
-  background-color: #e8ecf274;
+  background-color: #83838375;
 }
 
 /* Footer*/
