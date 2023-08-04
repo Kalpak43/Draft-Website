@@ -526,7 +526,8 @@ input[type="checkbox"]{
   position: relative;
   width: 90%;
   aspect-ratio: 16/9;
-  background-color: #4c4949;
+  border: 2px solid white;
+  background-color: #040404;
   border-radius: 0.4rem;
   overflow: hidden;
 }
@@ -549,8 +550,15 @@ input[type="checkbox"]{
 }
 
 .event-item a {
-  bottom: 0;
-  right: 0;
+  top: 80%;
+  left: 43%;
+}
+
+@media only screen and (max-width : 990px) {
+  .event-item a {
+    top: 70%;
+    left: 39%;
+  }
 }
 
 .event-item .hover-content {
@@ -728,6 +736,20 @@ input[type="checkbox"]{
 
 /* HACK-NOW */
 
+.hacknow-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-inline: 0.5rem;
+  background-color: #00ffea50;
+  backdrop-filter: blur(10px);
+  z-index: 998;
+}
+
+.hacknow-logo img {
+  max-height: 100px;
+}
+
 .event-ins .container {
   background-color: #8d24aa56;
   border-radius: 0.4rem;
@@ -767,6 +789,25 @@ input[type="checkbox"]{
   border-color: #23a6d5;
 }
 
+table {
+  width: 100%;
+  background-image: linear-gradient(to right, #069d90, #01554e);
+  font-size: 2rem;
+}
+
+@media screen and (max-width : 990px) {
+  table {
+    font-size: 1.5rem;
+  }
+}
+
+table, thead, tr, td tbody {
+  border-radius: 0.3rem;
+}
+
+thead th {
+  background-color: #e8ecf274;
+}
 
 /* Footer*/
 
@@ -810,6 +851,18 @@ input[type="checkbox"]{
   color: #fff;
 }
 
+.footer-reg {
+  align-items: end;
+  justify-content: start;
+}
+
+
+@media screen and (max-width : 990px) {
+  .footer-reg {
+    align-items: center;
+    justify-content: center;
+  }  
+}
 
 #footer .social-links a {
   font-size: 18px;
