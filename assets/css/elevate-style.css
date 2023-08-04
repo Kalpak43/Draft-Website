@@ -538,8 +538,9 @@ input[type="checkbox"]{
   }
 }
 
-.event-item h2, .event-item a {
-  margin: 0.3rem;
+.event-item a {
+  text-align: center;
+  padding: 0.3rem;
   position: absolute;
   z-index: 999;
 }
@@ -550,15 +551,8 @@ input[type="checkbox"]{
 }
 
 .event-item a {
-  top: 80%;
-  left: 43%;
-}
-
-@media only screen and (max-width : 990px) {
-  .event-item a {
-    top: 70%;
-    left: 39%;
-  }
+  right: 45%;
+  bottom: 7%;
 }
 
 .event-item .hover-content {
