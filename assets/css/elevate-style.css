@@ -851,6 +851,18 @@ thead th {
   color: #fff;
 }
 
+.footer-reg {
+  align-items: end;
+  justify-content: start;
+}
+
+
+@media screen and (max-width : 990px) {
+  .footer-reg {
+    align-items: center;
+    justify-content: center;
+  }  
+}
 
 #footer .social-links a {
   font-size: 18px;

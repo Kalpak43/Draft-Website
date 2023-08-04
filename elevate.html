@@ -73,7 +73,8 @@
       <li><a href="#about" onclick="unCheck()">About</a></li>
       <li><a href="#speakers" onclick="unCheck()">Speakers</a></li>
       <li><a href="#timeline" onclick="unCheck()">Schedule</a></li>
-      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScsG4hJ-pFejaq19SYaQkPOl88kpnsxhwxu6bWyusQAF8Gktg/viewform" onclick="unCheck()">Register</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScsG4hJ-pFejaq19SYaQkPOl88kpnsxhwxu6bWyusQAF8Gktg/viewform"
+          onclick="unCheck()">Register</a></li>
     </ul>
   </div>
 
@@ -87,20 +88,23 @@
       <div class="btns d-flex">
         <a href="./assets/img/Hero Sec Elevate1.png" download="Elevate2023"
           class="btn rounded-pill btn-outline-light m-2">Download Brochure</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScsG4hJ-pFejaq19SYaQkPOl88kpnsxhwxu6bWyusQAF8Gktg/viewform" type="button" class="btn rounded-pill btn-outline-light m-2">Register Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScsG4hJ-pFejaq19SYaQkPOl88kpnsxhwxu6bWyusQAF8Gktg/viewform"
+          type="button" class="btn rounded-pill btn-outline-light m-2">Register Now</a>
       </div>
     </div>
   </section>
 
 
   <main>
-
+    <!-- COUNTDOWN SECTION-->
+    <section class="countdown p-4" id="countdown" data-aos="zoom-in" data-aos-delay="250"></section>
+    
     <br>
     <!-- SPONSORS SECTION -->
     <section class="sponsors" id="sponsors">
       <div class="container">
         <div class="row text-center">
-          <div class="my-4">
+          <div class="my-4" data-aos="fade-up">
             <h5>Organizers</h5>
             <div class="d-flex justify-content-evenly flex-wrap">
               <div class="sponsor-logo d-flex align-items-center justify-content-center">
@@ -109,7 +113,7 @@
             </div>
           </div>
 
-          <div class="my-4">
+          <div class="my-4" data-aos="fade-up">
             <h5>Support</h5>
             <div class="d-flex justify-content-evenly flex-wrap">
               <div class="sponsor-logo d-flex align-items-center justify-content-center">
@@ -124,7 +128,7 @@
             </div>
           </div>
 
-          <div class="my-4">
+          <div class="my-4" data-aos="fade-up">
             <h5>Co-partner</h5>
             <div class="d-flex justify-content-evenly flex-wrap">
               <div class="sponsor-logo d-flex align-items-center justify-content-center">
@@ -133,7 +137,7 @@
             </div>
           </div>
 
-          <div class="my-4">
+          <div class="my-4" data-aos="fade-up">
             <h5>Community partners</h5>
             <div class="d-flex justify-content-evenly flex-wrap">
               <div class="sponsor-logo d-flex align-items-center justify-content-center">
@@ -160,7 +164,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 d-flex align-items-center px-4">
             <div>
-              <h3><i class="fa-solid fa-clock fa-xs mx-2"></i> 9:30 am</h3>
+              <h3><i class="fa-solid fa-clock fa-xs mx-2"></i> 9:00 am -5:45 pm</h3>
               <h3><i class="fa-solid fa-calendar-days fa-xs mx-2"></i> 25-26 August, 2023</h3>
               <h3 class="wrap"><i class="fa-solid fa-location-dot fa-xs mx-2"></i> GH Raisoni College of Engineering,
                 Nagpur</h3>
@@ -169,9 +173,6 @@
         </div>
       </div>
     </section>
-
-    <!-- COUNTDOWN SECTION-->
-    <section class="countdown p-4" id="countdown" data-aos="zoom-in" data-aos-delay="250"></section>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="d-flex align-items-center">
@@ -205,14 +206,18 @@
             <img src="./assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 d-flex align-items-center">
-            <p>The IEEE-CS SBC Chapter(GHRCE) is a Student Branch Chapter comprising enthusiastic members of the IEEE
-              community who are dedicated to promoting Computer Science technologies and emerging technology trends that
-              have a positive social impact on humanity. Through the organization of diverse workshops and events, our
-              aim is not only to contribute to the betterment of society, but also to facilitate individual development
-              by providing opportunities to learn new technical skills and cultivate leadership qualities. As
-              volunteers, our mission is to foster technological advancement by bringing people together, while our
-              vision is to create abundant opportunities for knowledge sharing, technical skill development,
-              collaboration, and networking to contribute towards a better future.</p>
+            <ol>
+              <li>The IEEE-CS SBC Chapter(GHRCE) is a Student Branch Chapter comprising enthusiastic members of the IEEE
+                community who are dedicated to promoting Computer Science technologies and emerging technology trends that
+                have a positive social impact on humanity.</li>
+              <li>Through the organization of diverse workshops and events, our
+                aim is not only to contribute to the betterment of society, but also to facilitate individual development
+                by providing opportunities to learn new technical skills and cultivate leadership qualities.</li>
+              <li>As
+                volunteers, our mission is to foster technological advancement by bringing people together, while our
+                vision is to create abundant opportunities for knowledge sharing, technical skill development,
+                collaboration, and networking to contribute towards a better future.</li>
+            </ol>
           </div>
 
         </div>
@@ -233,22 +238,16 @@
               <div class="card p-3 py-4">
 
                 <div class="text-center">
-                  <img src="https://i.imgur.com/bDLhJiP.jpg" width="150" class="rounded-circle">
+                  <img src="./assets/img/HitestDewani.jpeg" width="150" class="rounded-circle">
                 </div>
 
                 <div class="text-center mt-3">
-                  <h5 class="mt-2 mb-0">Anmoldeep Singh Arora</h5>
-                  <span>UI/UX Designer</span>
+                  <h5 class="mt-2 mb-0">Hitesh Dewani</h5>
+                  <span>Co-founder & Director @HR Mentors</span>
 
-                  <div class="px-4 mt-1">
-                    <p class="fonts">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. </p>
-
-                  </div>
 
                   <ul class="social-list">
-                    <li><a href="" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/hiteshdewani" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
                   </ul>
 
                 </div>
@@ -265,18 +264,18 @@
                 </div>
 
                 <div class="text-center mt-3">
-                  <h5 class="mt-2 mb-0">Alexender Schidmt</h5>
-                  <span>UI/UX Designer</span>
+                  <h5 class="mt-2 mb-0">Sneha Taori</h5>
+                  <span>Director @AICPE Educational Serivice Pvt. Ltd.</span>
 
-                  <div class="px-4 mt-1">
+                  <!-- <div class="px-4 mt-1">
                     <p class="fonts">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                       ex ea commodo consequat. </p>
 
-                  </div>
+                  </div> -->
 
                   <ul class="social-list">
-                    <li><a href="" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sneha-taori-080469189" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
                   </ul>
 
                 </div>
@@ -286,6 +285,9 @@
             </div>
 
           </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>More Revealing Soon...</p>
         </div>
     </section>
     <br>
@@ -672,6 +674,13 @@
             <strong> <br> Phone:</strong> +91 95117 22865<br>
             <strong>Email:</strong> ieeecs@raisoni.net<br>
           </p>
+        </div>
+        <div class="footer-reg col-lg-9 col-md-6 d-flex flex-column">
+          <h4>See You there!!!</h4>
+          <div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScsG4hJ-pFejaq19SYaQkPOl88kpnsxhwxu6bWyusQAF8Gktg/viewform"
+            type="button" class="btn rounded-pill btn-outline-light m-2">Register Now</a>
+          </div>
         </div>
       </div>
     </div>
