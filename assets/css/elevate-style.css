@@ -789,6 +789,25 @@ input[type="checkbox"]{
   border-color: #23a6d5;
 }
 
+table {
+  width: 100%;
+  background-image: linear-gradient(to right, #069d90, #01554e);
+  font-size: 2rem;
+}
+
+@media screen and (max-width : 990px) {
+  table {
+    font-size: 1.5rem;
+  }
+}
+
+table, thead, tr, td tbody {
+  border-radius: 0.3rem;
+}
+
+thead th {
+  background-color: #e8ecf274;
+}
 
 /* Footer*/
 
