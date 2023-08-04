@@ -404,7 +404,7 @@ input[type="checkbox"]{
 }
 
 .ghrce_logo {
-  max-height: 170px;
+  max-height: 140px;
 }
 
 .ieeecs_logo {
@@ -420,7 +420,7 @@ input[type="checkbox"]{
 }
 
 .cse_logo {
-  max-height: 150px;
+  max-height: 180px;
 }
 
 /* ABOUT */
@@ -538,8 +538,9 @@ input[type="checkbox"]{
   }
 }
 
-.event-item h2, .event-item a {
-  margin: 0.3rem;
+.event-item a {
+  text-align: center;
+  padding: 0.3rem;
   position: absolute;
   z-index: 999;
 }
@@ -550,15 +551,8 @@ input[type="checkbox"]{
 }
 
 .event-item a {
-  top: 80%;
-  left: 43%;
-}
-
-@media only screen and (max-width : 990px) {
-  .event-item a {
-    top: 70%;
-    left: 39%;
-  }
+  right: 45%;
+  bottom: 7%;
 }
 
 .event-item .hover-content {
@@ -741,7 +735,7 @@ input[type="checkbox"]{
   top: 0;
   left: 0;
   padding-inline: 0.5rem;
-  background-color: #00ffea50;
+  background-color: #01746a50;
   backdrop-filter: blur(10px);
   z-index: 998;
 }
@@ -750,48 +744,22 @@ input[type="checkbox"]{
   max-height: 100px;
 }
 
-.event-ins .container {
-  background-color: #8d24aa56;
+.event-info .about {
+  font-size: 1.4rem;
+  background-color: #069d904e;
   border-radius: 0.4rem;
   backdrop-filter: blur(10px);
 }
 
-.event-ins ol {
-  padding-left: 50px;
-}
-.event-ins li {
-  color: #ffffff97;
-  padding-left: 16px;
-  margin-top: 24px;
-  position: relative;
-  font-size: 16px;
-  line-height: 20px;
-}
-.event-ins .event-ins li:before {
-  content: '';
-  display: block;
-  height: 42px;
-  width: 42px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  position: absolute;
-  top: -8px;
-  left: -35px;
-}
-.event-ins strong {
-  font-size: 1.5rem;
-  color: #fff;
-}
-.event-ins ol.alternating-colors li:nth-child(odd):before {
-  border-color: #8E24AA;
-}
-.event-ins ol.alternating-colors li:nth-child(even):before {
-  border-color: #23a6d5;
+.event-ins .container {
+  background-color: #8adbe070;
+  border-radius: 0.4rem;
+  backdrop-filter: blur(10px);
 }
 
 table {
   width: 100%;
-  background-image: linear-gradient(to right, #069d90, #01554e);
+  background-image: linear-gradient(to right, #069d90, #023834);
   font-size: 2rem;
 }
 
@@ -806,7 +774,7 @@ table, thead, tr, td tbody {
 }
 
 thead th {
-  background-color: #e8ecf274;
+  background-color: #83838375;
 }
 
 /* Footer*/

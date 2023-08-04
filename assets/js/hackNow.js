@@ -5,7 +5,7 @@ const hackNow = async () => {
         console.log(x)
         let tab = ``
         for (let i in x) {
-            tab += `<tr>
+            tab += `<tr data-aos="fade-up">
             <th scope="row">${x[i].Rank}</th>
             <td>${x[i].Name}</td>
             <td>${x[i].Score}</td>
