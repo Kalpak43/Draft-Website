@@ -791,6 +791,17 @@ thead th {
   backdrop-filter: blur(10px);
 }
 
+.perks .row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width : 990px) {
+  .perks .row {
+    display: block;
+  }
+}
+
 .perks img {
   max-height: 120px;
 }
