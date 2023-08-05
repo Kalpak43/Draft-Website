@@ -572,6 +572,20 @@ input[type="checkbox"]{
   opacity: 1;
 }
 
+@media screen and (max-width : 990px) {
+  .event-cont {
+    padding: 0;
+  }
+  .hover-content p {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+  }
+  .event-item a {
+    right: 2%;
+    bottom: 1%;
+  }
+}
+
 /* TIMILINE */
 .timeline {
   display: flex;
@@ -688,28 +702,6 @@ input[type="checkbox"]{
   color: #555ac0;
 }
 
-.timeline__event--type3:before {
-  background: #aff1b6;
-  border-color: #24b47e;
-}
-
-.timeline__event--type3:after {
-  background: #24b47e;
-}
-
-.timeline__event--type3 .timeline__event__date {
-  color: #aff1b6;
-}
-
-.timeline__event--type3 .timeline__event__icon {
-  background: #24b47e;
-  color: #24b47e;
-}
-
-.timeline__event--type3 .timeline__event__title {
-  color: #24b47e;
-}
-
 .timeline__event:last-child:after {
   content: none;
 }
@@ -726,6 +718,18 @@ input[type="checkbox"]{
 
 .event2::after {
   height: 110%;
+}
+
+.event4::after {
+  height: 180%;
+}
+
+.event8::after {
+  height: 120%;
+}
+
+.d2-event6::after {
+  height: 120%;
 }
 
 /* HACK-NOW */
@@ -775,6 +779,31 @@ table, thead, tr, td tbody {
 
 thead th {
   background-color: #83838375;
+}
+
+/* PERKS */
+
+.perks {
+  border: 2px solid white;
+  border-radius: 0.3rem;
+  margin-inline: 2rem;
+  background-color: #810eed69;
+  backdrop-filter: blur(10px);
+}
+
+.perks .row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width : 990px) {
+  .perks .row {
+    display: block;
+  }
+}
+
+.perks img {
+  max-height: 120px;
 }
 
 /* Footer*/
