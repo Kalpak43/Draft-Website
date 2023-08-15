@@ -391,11 +391,11 @@ input[type="checkbox"]{
 /* SPONSORS */
 
 .sponsor-logo {
-  background-color: #8a82924e;
+  background-color: #7959994e;
   backdrop-filter: blur(10px);
   margin: 0.4rem;
   border-radius: 0.4rem;
-  width: 171px;
+  width: 191px;
   aspect-ratio: 1/1;
 }
 
@@ -542,7 +542,7 @@ input[type="checkbox"]{
   text-align: center;
   padding: 0.3rem;
   position: absolute;
-  z-index: 999;
+  z-index: 997;
 }
 
 .event-item h2 {
@@ -621,6 +621,7 @@ input[type="checkbox"]{
 }
 
 .timeline__event__content {
+  width: 100%;
   text-align: center;
   padding: 20px;
 }
@@ -852,6 +853,7 @@ thead th {
   align-items: end;
   justify-content: start;
 }
+
 
 
 @media screen and (max-width : 990px) {

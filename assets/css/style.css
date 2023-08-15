@@ -1099,8 +1099,8 @@ section {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.events .content .content-date p {
-  margin-bottom: 0;
+.events .content .content-date small {
+  margin: 0;
 }
 
 .events .content:hover .content-title {
