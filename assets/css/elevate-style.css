@@ -733,6 +733,10 @@ input[type="checkbox"]{
   height: 120%;
 }
 
+.d2-event4::after {
+  height: 120%;
+}
+
 /* HACK-NOW */
 
 .hacknow-logo {
