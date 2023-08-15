@@ -391,11 +391,11 @@ input[type="checkbox"]{
 /* SPONSORS */
 
 .sponsor-logo {
-  background-color: #8a82924e;
+  background-color: #7959994e;
   backdrop-filter: blur(10px);
   margin: 0.4rem;
   border-radius: 0.4rem;
-  width: 171px;
+  width: 191px;
   aspect-ratio: 1/1;
 }
 
