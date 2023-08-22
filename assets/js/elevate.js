@@ -30,3 +30,8 @@ const unCheck = () => {
     const checkBox = document.getElementById('active')
     checkBox.checked = false
 }
+
+const copyToClipboard = () => {
+    navigator.clipboard.writeText("rocknrollschoolofmusic@gmail.com")
+    alert("Copied the text: rocknrollschoolofmusic@gmail.com")
+}
