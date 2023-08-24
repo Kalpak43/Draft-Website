@@ -1,4 +1,4 @@
-let countDownDate = new Date("Aug 25, 2023 10:00:00")
+let countDownDate = new Date("Aug 25, 2023 09:00:00")
 countDownDate.getHours()
 let x = setInterval(function () {
     let now = new Date()
