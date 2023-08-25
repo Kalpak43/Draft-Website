@@ -20,7 +20,7 @@ let x = setInterval(function () {
     let content = document.getElementById('countdown')
     content.innerHTML = `<p>Time Left:</p><h1><span>${days}</span>:<span>${hours}</span>:<span>${minutes}</span>:<span>${seconds}</span> </h1>`
 
-    if(days == "00" && hours == "00" && minutes =="00" && seconds == "00"){
+    if(days <= "00" && hours <= "00" && minutes <="00" && seconds <= "00"){
         content.innerHTML = `<h1>Event has Begun</h1>`
     }
 }, 1000)
