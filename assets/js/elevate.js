@@ -1,4 +1,5 @@
 let countDownDate = new Date("Aug 25, 2023 09:00:00")
+let endDate = new Date("Aug 26, 2023 07:00:00")
 countDownDate.getHours()
 let x = setInterval(function () {
     let now = new Date()
@@ -20,8 +21,13 @@ let x = setInterval(function () {
     let content = document.getElementById('countdown')
     content.innerHTML = `<p>Time Left:</p><h1><span>${days}</span>:<span>${hours}</span>:<span>${minutes}</span>:<span>${seconds}</span> </h1>`
 
-    if(days == "00" && hours == "00" && minutes =="00" && seconds == "00"){
-        content.innerHTML = `<h1>Event has Begun</h1>`
+    if(now < endDate) {
+        if(days <= "00" && hours <= "00" && minutes <="00" && seconds <= "00"){
+            content.innerHTML = `<h1>Event has Begun</h1>`
+        }
+    }
+    else if(now >= endDate) {
+        content.innerHTML = `<h1>Event has Ended</h1>`
     }
 }, 1000)
 
