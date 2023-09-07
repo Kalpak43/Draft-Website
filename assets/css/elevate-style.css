@@ -767,7 +767,8 @@ input[type="checkbox"]{
 }
 
 table {
-  width: 100%;
+  width: fit-content;
+  min-width: 80%;
   background-image: linear-gradient(to right, #069d90, #023834);
   font-size: 2rem;
 }
@@ -810,6 +811,19 @@ thead th {
 .perks img {
   max-height: 120px;
 }
+
+/* GLIMPSES */
+.img-carousel {
+  border: 2px solid #fff;
+  padding: 0;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+}
+
+.img-carousel img {
+  object-fit: contain;
+}
+
 
 /* Footer*/
 
